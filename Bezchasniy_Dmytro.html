@@ -1,0 +1,76 @@
+<!--
+    Безчасний Дмитро, група ТЗ-91
+    Створення форми за допомогою HTML
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>HTML форма Безчасного Дмитра</title>
+        <style>
+            .center {
+             width: 750px; /* Ширина елемента в пікселях */
+             padding: 150px; /* Поля навколо тексту */
+             margin: auto; /* Вірівнювання по центру */
+             background: rgb(255, 255, 255); /* Колір фону */
+            }
+           </style>
+    </head>
+
+    <body>
+        <div class="center">
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <table border="3" align="center" width="66%">
+
+                    <tr>
+                        <td colspan="2"><center><b><h1>Pizza Shop 2.0 </h1></b></center></td>
+                    </tr>
+
+                    <tr>
+                        <td><center><b> Name </center></b></td>
+                        <td><center><input placeholder="Please, enter your name." type="text" name="username" required></center></td>
+                    </tr>
+
+                    <tr>
+                        <td><center><b> Pizza Topping </b></center></td>
+                        <td>
+                            <input checked type="radio" name="pizza" value="Best"> Supreme <b>55 UAH</b>
+                            <br><input type="radio" name="pizza" value="Worst"> Vegaterian <b>69 UAH</b>
+                            <br><input type="radio" name="pizza" value="Medium">Hawaiian <b>95 UAH</b>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><center><b>Pizza Sauce</b></center></td>
+                        <td><select name="color" style="margin-left: 5px;">
+                            <option value="mini">Sweet and sour</option>
+                            <option selected value="stdrt">Tomato</option>
+                            <option value="king">Mustard</option>
+                        </select>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                        <td><center><b>Optional Extras</b></center></td>
+                        <td><input type="checkbox" name="drink" style="margin-left: 35px;"> Extra Cheese
+                            <input type="checkbox" name="drink" style="margin-left: 20.8px;"> Gluten Free Base
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><b>Delivery Instructions:</b><br>
+                            <textarea placeholder="Please, provide additional details of your order if you wish." name="text" cols="66" rows="6"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <center><button type="submit">Send my order </button>
+                    </tr>
+
+                </table>
+            </form>
+
+        </div>
+    </body>
+</html>
